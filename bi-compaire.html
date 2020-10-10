@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+	
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<title>LEC :: Administration</title>
+    <link href="common/styles.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+<!--
+label {width:200px}
+
+.blocmodif {
+	padding: 0px 10px 4px;
+	border: 1px solid #003366;
+	margin-bottom: 8px;
+}
+.tablist {margin-top:1px;border-top:1px solid #FFF}
+.blocmodif a {background-color:#EEE;padding:3px;}
+.blo{display:block;}
+.numBI {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF9900;
+	border:1px solid #FF6600;
+}
+img.printBI {
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	margin: 0px;
+	cursor: help;
+}
+#printBI {
+	display: inline;
+	background-color: #FFFFFF;
+}
+h1 span {
+	color: #FF6600;
+}
+-->
+</style>
+
+<link href="common/printBI.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body >
+		
+
+
+<div id="page">	
+
+  <div id="content">
+
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tablist" style="padding-left:30px">
+	   <tr>
+			<th><h2>Situation initiale</h2></th>
+			<th><h2>Situation finale</h2></th>
+			<th><h2>Diff&eacute;rence</h2></th>
+	   </tr>
+		<tr>
+			<td>{VALUE_prev_sejour}&nbsp;</td>
+			<td>{VALUE_sejour}&nbsp;</td>
+			<td align="right">{VALUE_stay_fee}&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{VALUE_prev_city}&nbsp;</td>
+			<td>{VALUE_city}&nbsp;</td>
+			<td align="right">{VALUE_voyage_fee}&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{VALUE_pre_insurance}&nbsp;</td>
+			<td>{VALUE_insurance}&nbsp;</td>
+			<td align="right">{VALUE_assurance_fee}&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{VALUE_pre_rapat}&nbsp;</td>
+			<td>{VALUE_rapat}&nbsp;</td>
+			<td align="right">{VALUE_assistance_fee}&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{VALUE_pre_option4}&nbsp;</td>
+			<td>{VALUE_option4}&nbsp;</td>
+			<td align="right">{VALUE_option4_fee}&nbsp;</td>
+		</tr>
+		<!--BLK REDUC-->
+		<tr>
+			<td>pas de r&eacute;duction</td>
+			<td>{VALUE_reduc}&nbsp;</td>
+			<td align="right">{VALUE_reduc_fee}&nbsp;</td>
+		</tr>
+		<!--END BLK-->
+		<tr>
+		   <td>&nbsp;</td>
+		   <td>&nbsp;</td>
+		   <td align="right"><strong>{VALUE_total_fee}</strong></td>
+		</tr>
+</table>
+</div>
+
+</div>
+{VALUE_footer}
+
+</body>
+</html>
