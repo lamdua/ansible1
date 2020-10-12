@@ -1,6 +1,7 @@
 <?php
 require "common.php";
 //test git
+// test git Lam
 echo "git";
 //added by Pho 28-5-07
 //if (!$_SESSION['UID']) exo_redirect("lec-login.php");
